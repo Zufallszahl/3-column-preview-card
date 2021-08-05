@@ -15,8 +15,8 @@
 
 html {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    align-items: safe center;
     height: 100%
 }
 
@@ -34,7 +34,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     padding-bottom: 1em;
     color: var(--white);
 }
@@ -108,9 +107,53 @@ body {
     border-radius: 40px;
 }
 
+.learn-more:hover {
+    color: var(--light-gray)
+}
+
+.learn-more:hover::before {
+    background: none;
+    border: 2px solid var(--light-gray);
+}
+
 
 /* FOOTER */
 
 footer {
     text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--orange)
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
+    .main-section {
+        position: relative;
+        flex-direction: column;
+    }
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+    .description {
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+        min-height: 100%
+    }
+    .learn-more {
+        margin: 0;
+    }
+    .sedans,
+    .suvs,
+    .luxury {
+        padding: 2rem 3rem 2rem 3rem;
+        width: max-content;
+    }
 }
