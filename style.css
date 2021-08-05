@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    background-color: var(--light-gray);
+}
+
+
+/* STRUCTURE AND COLORS */
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 1em;
+    color: var(--white);
+}
+
+.sedans,
+.suvs,
+.luxury {
+    padding: 3rem;
+    width: max-content;
+}
+
+.sedans {
+    background-color: var(--orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+    background-color: var(--cyan);
+}
+
+.luxury {
+    background-color: var(--dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* TEXT */
+
+.title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: var(--light-gray);
+}
+
+.description {
+    padding: 1rem 0 2rem 0;
+    max-width: 22ch;
+    min-height: 200px;
+    line-height: 1.5em;
+}
+
+
+/* BUTTONS */
+
+.learn-more {
+    position: relative;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    background: none;
+    outline: none;
+    color: black;
+    mix-blend-mode: screen;
+    padding: 1em 2em;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.learn-more::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--light-gray);
+    content: '';
+    mix-blend-mode: color-burn;
+    border-radius: 40px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
