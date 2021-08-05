@@ -72,7 +72,7 @@ body {
 }
 
 .description {
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 0;
     max-width: 22ch;
     min-height: 200px;
     line-height: 1.5em;
